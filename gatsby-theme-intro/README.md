@@ -30,7 +30,7 @@ https://weeby.studio/intro/preview
 ```shell
 mkdir my-site
 cd my-site
-yarn init
+yarn init -y
 yarn add gatsby react react-dom @wkocjan/gatsby-theme-intro
 ```
 
@@ -43,7 +43,9 @@ module.exports = {
   plugins: [
     {
       resolve: "@wkocjan/gatsby-theme-intro",
-      options: {},
+      options: {
+        theme: "classic",
+      },
     },
   ],
 }
@@ -54,7 +56,7 @@ module.exports = {
 That's it, you can now run your site using
 
 ```shell
-yarn gatsby develop
+gatsby develop
 ```
 
 This process will create `content/` directory within your site with a sample data.
