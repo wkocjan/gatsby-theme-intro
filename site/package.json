@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "name": "site",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Wojciech Kocjan <wojciech@kocjan.net>",
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "clean": "gatsby clean",
+    "develop": "gatsby develop"
+  },
+  "dependencies": {
+    "@wkocjan/gatsby-theme-intro": "*",
+    "gatsby": "^2.20.12",
+    "react-dom": "^16.12.0",
+    "react": "^16.12.0"
+  }
+}

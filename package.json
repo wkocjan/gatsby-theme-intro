@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "yarn workspace site build",
+    "develop": "yarn workspace site develop"
+  },
+  "workspaces": [
+    "gatsby-theme-intro",
+    "site"
+  ]
+}
