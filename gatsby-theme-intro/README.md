@@ -6,7 +6,7 @@ Tell your story by showing your skills, projects and career path.
 
 ## Preview
 
-[![Intro Theme](https://github.com/wkocjan/gatsby-theme-intro/blob/intro.png?raw=true)](https://www.youtube.com/watch?v=03rKddYHazo)
+[![Intro Theme](https://github.com/wkocjan/gatsby-theme-intro/blob/master/intro.png?raw=true)](https://www.youtube.com/watch?v=03rKddYHazo)
 
 ### Live Demo
 
