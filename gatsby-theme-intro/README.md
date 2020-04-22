@@ -1,6 +1,6 @@
 # Intro - Personal branding theme for developers
 
-Intro is an open source [Gatsby JS](https://www.gatsbyjs.org/) theme built specially for developers.
+Intro is an open source [Gatsby](https://www.gatsbyjs.org/) theme built specially for developers.
 
 Tell your story by showing your skills, projects and career path.
 
@@ -17,6 +17,7 @@ https://weeby.studio/intro/preview
 
 - Show your skills, tools, projects & career path
 - 10 predefined color versions
+- YAML files as a data source
 - Contact form integrated with [Formspree](https://formspree.io/)
 - Responsive/adaptive images via [gatsby-image](https://www.gatsbyjs.org/packages/gatsby-image/)
 - Uses utility-first [TailwindCSS](https://tailwindcss.com/) framework
@@ -30,7 +31,7 @@ https://weeby.studio/intro/preview
 mkdir my-site
 cd my-site
 yarn init
-yarn add gatsby react react-dom gatsby-theme-intro
+yarn add gatsby react react-dom @wkocjan/gatsby-theme-intro
 ```
 
 ### Enable theme
@@ -41,7 +42,7 @@ Then add the theme to your `gatsby-config.js`.
 module.exports = {
   plugins: [
     {
-      resolve: "gatsby-theme-intro",
+      resolve: "@wkocjan/gatsby-theme-intro",
       options: {},
     },
   ],
@@ -50,7 +51,7 @@ module.exports = {
 
 ### Run your site
 
-That's it, you can now run your gatsby site using
+That's it, you can now run your site using
 
 ```shell
 yarn gatsby develop
@@ -117,7 +118,7 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: "gatsby-theme-intro",
+      resolve: "@wkocjan/gatsby-theme-intro",
       options: {
         basePath: "/",
         contentPath: "content/",
@@ -155,7 +156,7 @@ After modyfying `gatsby-config.js` it may be required to restart `gatsby develop
 
 ### Component shadowing
 
-You can use Gatsby component shadowing concept to customize the theme.
+You can use Gatsby component shadowing technique to customize the theme.
 
 - All components are located in `src/components` directory.
 - All parameters accepted by components are defined using [PropTypes](https://reactjs.org/docs/typechecking-with-proptypes.html). You can find types definitions in one centeral `src/types` location.
@@ -173,7 +174,7 @@ module.exports = {
   (...)
   plugins: [
     {
-      resolve: "gatsby-theme-intro",
+      resolve: "@wkocjan/gatsby-theme-intro",
       options: {
         (...)
         theme: {
@@ -199,6 +200,6 @@ Please remember, that after modyfying `gatsby-config.js` file it may be required
 
 Intro. is a theme created by [Wojciech Kocjan](https://kocjan.net) from [Weeby Studio](https://weeby.studio).
 
-The theme has been initially [launched](https://www.producthunt.com/posts/intro-8) in 2018 as a commercial project written in JavaScript. In 2020 it's been rewritten to GatsbyJS and open sourced.
+The theme has been initially [launched](https://www.producthunt.com/posts/intro-8) in 2018 as a commercial project written in JavaScript. In 2020 it's been rewritten to Gatsby and open sourced.
 
 **Thank you for using it!**
