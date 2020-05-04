@@ -1,3 +1,7 @@
+![Version](https://img.shields.io/npm/v/@wkocjan/gatsby-theme-intro)
+![Downloads](https://img.shields.io/npm/dt/@wkocjan/gatsby-theme-intro)
+![License](https://img.shields.io/npm/l/@wkocjan/gatsby-theme-intro)
+
 # Intro - Personal branding theme for developers
 
 Intro is an open source [Gatsby](https://www.gatsbyjs.org/) theme built specially for developers.
