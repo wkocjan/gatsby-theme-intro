@@ -35,16 +35,6 @@ module.exports = ({
       },
       `gatsby-transformer-sharp`,
       `gatsby-plugin-sharp`,
-      {
-        resolve: `gatsby-plugin-purgecss`,
-        options: {
-          develop: false,
-          printRejected: false,
-          rejected: true,
-          tailwind: true,
-          whitelistPatterns: [/^text-skill/, /^border-skill/],
-        },
-      },
     ],
   }
 }
