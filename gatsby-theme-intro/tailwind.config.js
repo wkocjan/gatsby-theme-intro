@@ -5,6 +5,12 @@ module.exports = theme => {
     typeof theme === "string" ? require(`./src/themes/${theme}`) : theme
 
   return {
+    purge: {
+      content: [`${__dirname}/src/**/*.js`, `./src/**/*.js`],
+      options: {
+        whitelistPatterns: [/^text-skill/, /^border-skill/],
+      },
+    },
     theme: {
       fontFamily: {
         header: ["Source Sans Pro", "sans-serif"],
