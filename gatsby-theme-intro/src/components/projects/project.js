@@ -26,7 +26,7 @@ const Project = props => {
             {url}
           </a>
         )}
-        <p className="w-full py-4">{description}</p>
+        <p className="w-full py-4 whitespace-pre-line">{description}</p>
         <ul className="pr-2">
           {status && <ProjectStatus status={status} />}
           {tags && <ProjectTags tags={tags} />}
