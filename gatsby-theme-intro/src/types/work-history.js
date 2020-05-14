@@ -5,6 +5,7 @@ export const WorkHistoryType = {
   company: string.isRequired,
   period: string,
   position: string,
+  url: string,
 }
 
 export const query = graphql`
@@ -12,5 +13,6 @@ export const query = graphql`
     company
     period
     position
+    url
   }
 `

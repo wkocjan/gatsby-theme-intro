@@ -28,6 +28,19 @@ exports.onPreBootstrap = ({ reporter }, options) => {
   }
 }
 
+// Define content types
+exports.sourceNodes = ({ actions }) => {
+  actions.createTypes(`
+    type WorkHistoryYaml implements Node @dontInfer {
+      id: ID!
+      company: String!
+      period: String
+      position: String
+      url: String
+    }
+  `)
+}
+
 // Query for events and create pages
 exports.createPages = async ({ actions }, options) => {
   const basePath = options.basePath || "/"
