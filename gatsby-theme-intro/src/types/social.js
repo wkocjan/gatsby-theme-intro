@@ -7,10 +7,12 @@ export const SocialType = {
     "dribbble",
     "facebook",
     "github",
+    "goodreads",
     "instagram",
     "linkedin",
     "producthunt",
     "twitter",
+    "xing",
   ]),
   url: string,
 }
