@@ -18,7 +18,7 @@ const Project = props => {
         <h4 className="font-bold">{name}</h4>
         {url && (
           <a
-            className="text-front underline hover:opacity-75 transition-opacity duration-150"
+            className="text-front underline break-all hover:opacity-75 transition-opacity duration-150"
             href={url}
             rel="noreferrer noopener"
             target="_blank"
