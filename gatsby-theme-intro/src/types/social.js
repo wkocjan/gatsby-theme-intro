@@ -12,6 +12,7 @@ export const SocialType = {
     "linkedin",
     "producthunt",
     "twitter",
+    "youtube",
     "xing",
   ]),
   url: string,
