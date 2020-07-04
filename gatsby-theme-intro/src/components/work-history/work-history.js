@@ -14,7 +14,7 @@ const WorkHistory = ({ history }) => {
             className="history-entry relative w-1/2 py-4"
             key={`${company}_${i}`}
           >
-            <span className="dot-bg w-14 h-14 transform absolute bg-line inline-flex rounded-full items-center justify-center">
+            <span className="dot-bg w-14 h-14 absolute bg-line inline-flex rounded-full items-center justify-center">
               <span className="dot w-5 h-5 bg-back-light rounded-full" />
             </span>
             {url ? (
