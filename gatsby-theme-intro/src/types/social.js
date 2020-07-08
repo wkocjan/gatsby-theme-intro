@@ -10,6 +10,7 @@ export const SocialType = {
     "goodreads",
     "instagram",
     "linkedin",
+    "medium",
     "producthunt",
     "twitter",
     "youtube",
