@@ -98,10 +98,11 @@ For each entry you can provide:
 | company   | Name of the company          | yes          |
 | period    | Start / End date             | no           |
 | position  | Your position at the company | no           |
+| url       | URL of the company           | no           |
 
 #### `social.yaml`
 
-List of your social media account. Please just fill the url parameter or leave it empty.
+List of your social media accounts. Please just fill the url parameter or leave it empty.
 
 Do not add custom items to the list.
 
@@ -139,8 +140,8 @@ module.exports = {
 After modyfying `gatsby-config.js` it may be required to restart `gatsby develop` process.
 
 - The `siteMetadata` section is responsible for SEO settings.
-- By modifying `basePath` parameter you can run the website on different URL (e.g. `https://mydomain.com/profile`). It may be useful when integrating with existing Gatsby site
-- By setting `showThemeLogo` to `false` you can hide the Intro logo in the footer area
+- By modifying `basePath` parameter you can run the website on different URL (e.g. `https://mydomain.com/profile`). It may be useful when integrating with existing Gatsby site.
+- By setting `showThemeLogo` to `false` you can hide the Intro logo in the footer area.
 - Change the `theme` parameter to load different color variant. Please refer to the list below for available values.
 
 ### Available color variants
@@ -166,6 +167,7 @@ You can use Gatsby component shadowing technique to customize the theme.
 
 - All components are located in `src/components` directory.
 - All parameters accepted by components are defined using [PropTypes](https://reactjs.org/docs/typechecking-with-proptypes.html). You can find types definitions in one centeral `src/types` location.
+- Code you want to overwrite should be placed within `src/@wkocjan/gatsby-theme-intro/` directory.
 
 Please refer to [the official documentation](https://www.gatsbyjs.org/docs/themes/shadowing/) to learn more.
 
