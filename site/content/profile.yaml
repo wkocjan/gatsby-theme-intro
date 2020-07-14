@@ -1,0 +1,29 @@
+- profile:
+  initials: HX
+  name: Hongru Xiang
+  email: h4xiang@uwaterloo.ca
+  profession: Software Developer
+  image: images/profile.png
+  location: Waterloo, Canada
+  relocation: true
+  company: University of Waterloo
+  for_hire: true
+  focus: Building OAK Studio
+  focus_url: https://oaksvideo.com
+  about: |
+    I'm a software engineer based in Waterloo, ON specializing in building and designing exceptional software systems 
+    ranging from distributed database engine with pure Java, consumer-centric video platform with gRPC & various 
+    languages, to efficient atom trapping system using ML approches.  
+  skills:
+    - Java
+    - gRPC
+    - Node.js
+  tools:
+    - Gradle
+    - React
+    - SQL
+  budget:
+    currency: $
+    min: 5
+    max: 250
+    default: 10
