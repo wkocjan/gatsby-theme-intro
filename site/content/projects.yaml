@@ -1,0 +1,40 @@
+- name: Atom Trapping System
+  url: https://github.com/TQT-RAAQS/AOD-Workstation
+  description: An atom trapping system that creates 1D & 2D defect-free atom arrays
+    by trapping and rearranging the atoms using acousto-optic deflectors efficiently with
+    machine learning techniques.
+  status: in progress
+  tags:
+    - Python
+    - Tensorflow
+  icon: github
+
+- name: OAK Studio
+  url: https://oaksvideo.com
+  description: Oak Creator Studio enables content creators to reach a broader audience 
+    effectively by bridging gaps between YouTube and other video platforms.
+  status: in progress
+  tags:
+    - gRPC
+    - Java
+    - AWS
+    - Go
+    - Node.js
+    - PostgresSQL
+    - Distributed System
+  icon: website
+  image: images/oak.png
+
+- name: openLooKeng
+  url: https://github.com/openlookeng/hetu-core
+  description: openLooKeng is a drop in engine which enables in-situ analytics on any data,
+    anywhere, including geographically remote data sources. It provides a global view of 
+    all of your data via its SQL 2003 interface. With high availability, auto-scaling, 
+    built-in caching and indexing support, openLooKeng is ready for enterprise workload 
+    with required reliability.
+  status: live
+  tags:
+    - Java
+    - SQL
+    - Distributed System
+  icon: github

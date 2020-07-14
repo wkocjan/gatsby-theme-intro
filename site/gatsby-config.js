@@ -1,16 +1,16 @@
 module.exports = {
   siteMetadata: {
-    description: "Personal page of John Doe",
+    description: "Personal page of Hongru Xiang",
     locale: "en",
-    title: "John Doe",
+    title: "Hongru Xiang | Portfolio",
   },
   plugins: [
     {
-      resolve: "@wkocjan/gatsby-theme-intro",
+      resolve: "../gatsby-theme-intro",
       options: {
         basePath: "/",
         contentPath: "content/",
-        showThemeLogo: true,
+        showThemeLogo: false,
         theme: "classic",
       },
     },
