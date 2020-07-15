@@ -12,8 +12,8 @@
   focus_url: https://oaksvideo.com
   about: |
     I'm a software engineer based in Waterloo, ON specializing in building and designing exceptional software systems 
-    ranging from distributed database engine with pure Java, consumer-centric video platform with gRPC & various 
-    languages, to efficient atom trapping system using ML approches.  
+    ranging from distributed database engine with pure Java and consumer-centric video platform with gRPC & various 
+    languages, to efficient atom trapping system using ML approaches.  
   skills:
     - Java
     - gRPC
