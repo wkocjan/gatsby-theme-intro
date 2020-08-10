@@ -38,6 +38,17 @@ exports.sourceNodes = ({ actions }) => {
       position: String
       url: String
     }
+
+    type ProjectsYaml implements Node @dontInfer {
+      id: ID!
+      description: String
+      icon: String
+      image: File @fileByRelativePath
+      name: String!
+      status: String
+      tags: [String]
+      url: String
+    }
   `)
 }
 
