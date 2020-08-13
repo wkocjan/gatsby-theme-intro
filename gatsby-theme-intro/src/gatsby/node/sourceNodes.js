@@ -1,6 +1,6 @@
 module.exports = ({ actions }) => {
   actions.createTypes(`
-    type WorkHistoryYaml implements Node @dontInfer {
+    type WorkHistoryYaml implements Node {
       id: ID!
       company: String!
       period: String
@@ -8,7 +8,7 @@ module.exports = ({ actions }) => {
       url: String
     }
 
-    type ProjectsYaml implements Node @dontInfer {
+    type ProjectsYaml implements Node {
       id: ID!
       description: String
       icon: String
