@@ -1,4 +1,4 @@
-export { arrayOf, shape } from "prop-types"
+export { arrayOf, shape, string } from "prop-types"
 export { ProfileType } from "./profile"
 export { ProjectType } from "./project"
 export { SocialType } from "./social"

@@ -108,9 +108,9 @@ Do not add custom items to the list.
 
 ### Enable email notifications
 
-Contact form is integrated with [Formspree](https://formspree.io/). Any form submissions will be sent to your e-mail (set in `profile.yaml`).
+Contact form is integrated with [Formspree](https://formspree.io/). To enable form submissions to your e-mail, please sign up for a Formspree account and create a new form in your dashboard.
 
-You need to confirm your e-mail - to do it, please just send any message using the contact form. Shortly after doing it, you'll receive message from Formspree with an activation link.
+Once you do it, you'll get your unique endpoint - please add it to `gatsby-config.js`, within a `siteMetadata` object.
 
 ## Configuration
 
@@ -122,6 +122,7 @@ module.exports = {
     description: "Personal page of John Doe",
     locale: "en",
     title: "John Doe",
+    formspreeEndpoint: "https://formspree.io/f/{your-id}",
   },
   plugins: [
     {
@@ -203,6 +204,14 @@ module.exports = {
 ```
 
 Please remember, that after modyfying `gatsby-config.js` file it may be required to restart `gatsby develop` process.
+
+## Changelog
+
+### 1.1.0
+
+The version introduces required changes to make the contact form work after [latest changes](https://help.formspree.io/hc/en-us/articles/360056076314-Phasing-out-legacy-forms-email-URLs-) from Formspree.
+
+To upgrade, please add `formspreeEndpoint` property to `siteMetadata` object in your `gatsby-config.js`. For more information about configuring Formspree, please refer to the documentation above.
 
 ## About
 

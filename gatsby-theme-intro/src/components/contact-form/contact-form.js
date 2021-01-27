@@ -1,8 +1,8 @@
 import React, { useRef, useState } from "react"
-import { ProfileType } from "../../types"
+import { ProfileType, string } from "../../types"
 import "./contact-form.css"
 
-const ContactForm = ({ email, budget }) => {
+const ContactForm = ({ formspreeEndpoint, budget }) => {
   const [isInquiry, setIsInquiry] = useState(false)
   const [selectedBudget, setSelectedBudget] = useState(budget.default)
   const inquiryDetails = useRef(null)
@@ -16,11 +16,7 @@ const ContactForm = ({ email, budget }) => {
         Contact
       </h5>
 
-      <form
-        action={`https://formspree.io/${email}`}
-        className="flex flex-wrap"
-        method="post"
-      >
+      <form action={formspreeEndpoint} className="flex flex-wrap" method="post">
         <div className="flex flex-wrap w-full">
           <div className="w-full lg:w-1/3 py-px lg:px-px">
             <input
@@ -146,7 +142,7 @@ const ContactForm = ({ email, budget }) => {
 
 ContactForm.propTypes = {
   budget: ProfileType.budget,
-  email: ProfileType.email,
+  formspreeEndpoint: string.isRequired,
 }
 
 export default ContactForm
