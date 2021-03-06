@@ -10,7 +10,7 @@ module.exports = ({
       locale: "en",
       showThemeLogo,
       title: "John Doe",
-      formspreeEndpoint: "https://formspree.io/f/xaylgrvn",
+      formspreeEndpoint: "https://formspree.io/f/{your-id}",
     },
     plugins: [
       {

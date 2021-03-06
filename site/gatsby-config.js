@@ -3,6 +3,7 @@ module.exports = {
     description: "Personal page of Hongru Xiang",
     locale: "en",
     title: "Hongru Xiang | Portfolio",
+    formspreeEndpoint: "https://formspree.io/f/xaylgrvn",
   },
   plugins: [
     {
