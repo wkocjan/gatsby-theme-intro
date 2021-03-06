@@ -1,27 +1,24 @@
-- name: Atom Trapping System
-  url: https://github.com/TQT-RAAQS/AOD-Workstation
+- name: Atom Sorting
   description: An atom trapping system that creates 1D & 2D defect-free atom arrays
-    by trapping and rearranging the atoms using acousto-optic deflectors efficiently with
-    machine learning techniques.
-  status: in progress
+    by trapping and rearranging the atoms using acousto-optic deflectors efficiently.
   tags:
     - Python
-    - Tensorflow
-  icon: github
+    - Numpy
 
 - name: OAK Studio
   url: https://oaksvideo.com
   description: Oak Creator Studio enables content creators to reach a broader audience 
     effectively by bridging gaps between YouTube and other video platforms.
-  status: in progress
+  status: live
   tags:
     - gRPC
     - Java
     - AWS
     - Go
     - Node.js
+    - React.js
     - PostgresSQL
-    - Distributed System
+    - Microservices
   icon: website
   image: images/oak.png
 
