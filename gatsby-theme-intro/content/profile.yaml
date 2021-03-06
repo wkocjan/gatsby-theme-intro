@@ -1,7 +1,6 @@
 - profile:
   initials: JD
   name: John Doe
-  email: john.doe@change.me
   profession: Web Developer
   image: images/profile.jpg
   location: New York, USA

@@ -7,7 +7,7 @@ import Summary from "../summary/summary"
 import Tools from "../tools/tools"
 import WorkHistory from "../work-history/work-history"
 
-const MainContent = ({ history, projects, profile }) => {
+const MainContent = ({ formspreeEndpoint, history, projects, profile }) => {
   return (
     <main className="lg:w-2/3 lg:pl-8 xl:pl-12">
       <Summary profile={profile} />
@@ -24,7 +24,10 @@ const MainContent = ({ history, projects, profile }) => {
       {profile.about && <About about={profile.about} />}
       <Projects projects={projects} />
       <WorkHistory history={history} />
-      <ContactForm email={profile.email} budget={profile.budget} />
+      <ContactForm
+        formspreeEndpoint={formspreeEndpoint}
+        budget={profile.budget}
+      />
     </main>
   )
 }

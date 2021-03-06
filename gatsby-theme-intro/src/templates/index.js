@@ -27,6 +27,7 @@ const IndexPage = ({ data }) => {
           history={history.nodes}
           profile={profile}
           projects={projects.nodes}
+          formspreeEndpoint={site.siteMetadata.formspreeEndpoint}
         />
       </div>
 
@@ -45,6 +46,7 @@ export const query = graphql`
     site {
       siteMetadata {
         showThemeLogo
+        formspreeEndpoint
       }
     }
     profile: profileYaml {
