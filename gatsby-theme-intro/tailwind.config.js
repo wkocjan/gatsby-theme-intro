@@ -11,6 +11,7 @@ module.exports = theme => {
         whitelistPatterns: [/^text-skill/, /^border-skill/],
       },
     },
+    darkMode: false,
     theme: {
       fontFamily: {
         header: ["Source Sans Pro", "sans-serif"],

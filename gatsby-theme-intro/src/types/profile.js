@@ -41,9 +41,7 @@ export const query = graphql`
     for_hire
     image {
       childImageSharp {
-        fixed(width: 144, height: 144, quality: 85) {
-          ...GatsbyImageSharpFixed_withWebp
-        }
+        gatsbyImageData(layout: FIXED, width: 144, height: 144, quality: 85)
       }
       publicURL
     }

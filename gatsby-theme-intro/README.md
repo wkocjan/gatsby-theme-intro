@@ -23,7 +23,6 @@ https://weeby.studio/intro/preview
 - 10 predefined color versions
 - YAML files as a data source
 - Contact form integrated with [Formspree](https://formspree.io/)
-- Responsive/adaptive images via [gatsby-image](https://www.gatsbyjs.org/packages/gatsby-image/)
 - Uses utility-first [TailwindCSS](https://tailwindcss.com/) framework
 - Responsive design (desktop / mobile)
 
@@ -206,6 +205,10 @@ module.exports = {
 Please remember, that after modyfying `gatsby-config.js` file it may be required to restart `gatsby develop` process.
 
 ## Changelog
+
+### 2.0.0
+
+The theme is now compatible with Gatsby v3 and TailwindCSS v2.
 
 ### 1.1.0
 

@@ -31,9 +31,8 @@ module.exports = ({
           path: contentPath,
         },
       },
-      {
-        resolve: "gatsby-plugin-react-svg",
-      },
+      `gatsby-plugin-react-svg`,
+      `gatsby-plugin-image`,
       `gatsby-transformer-sharp`,
       `gatsby-plugin-sharp`,
     ],

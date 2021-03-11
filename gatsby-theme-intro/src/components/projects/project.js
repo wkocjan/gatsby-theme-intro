@@ -1,4 +1,4 @@
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import React from "react"
 import { ProjectType } from "../../types"
 import ProjectIcon from "./project-icon"
@@ -11,7 +11,7 @@ const Project = props => {
     <div className="border-t-4 border-line relative flex flex-wrap bg-back-light p-4 lg:p-8 bg-no-repeat text-sm mb-6">
       {image && (
         <div className="w-full pb-4 lg:w-2/5 lg:pr-8 lg:pb-0">
-          <Img fluid={image.childImageSharp.fluid} alt={name} />
+          <GatsbyImage image={image.childImageSharp.gatsbyImageData} alt={name} />
         </div>
       )}
       <div className="lg:flex-1">

@@ -19,9 +19,7 @@ export const query = graphql`
     icon
     image {
       childImageSharp {
-        fluid(maxWidth: 640, quality: 85) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
+        gatsbyImageData(width: 640, quality: 85)
       }
     }
     name
