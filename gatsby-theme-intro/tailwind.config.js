@@ -8,7 +8,7 @@ module.exports = theme => {
     purge: {
       content: [`${__dirname}/src/**/*.js`, `./src/**/*.js`],
       options: {
-        whitelistPatterns: [/^text-skill/, /^border-skill/],
+        safelist: [/^text-skill/, /^border-skill/],
       },
     },
     darkMode: false,
