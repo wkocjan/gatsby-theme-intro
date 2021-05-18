@@ -1,6 +1,11 @@
-- company: Apple
+- company: University of Waterloo
+  position: Research Assistant
+  period: May 2021 - present
+  url: https://wasl.uwaterloo.ca/
+
+- company: Apple Inc.
   position: Software Engineer
-  period: January 2021 - present
+  period: January 2021 - April 2021
   url: https://www.apple.com/newsroom/
 
 - company: Institute for Quantum Computing
@@ -8,7 +13,7 @@
   period: January 2020 - December 2020
   url: https://tqt.uwaterloo.ca
 
-- company: Huawei
+- company: Huawei Technologies
   position: Software Engineer @ openLooKeng
   period: September 2019 - December 2019
   url: https://www.huawei.com/en/corporate-information
