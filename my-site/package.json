@@ -1,8 +1,15 @@
 {
+  "private": true,
   "name": "my-site",
   "version": "1.0.0",
   "main": "index.js",
+  "author": "Wojciech Kocjan <wojciech@kocjan.net>",
   "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "clean": "gatsby clean",
+    "develop": "gatsby develop"
+  },
   "dependencies": {
     "@wkocjan/gatsby-theme-intro": "^2.0.1",
     "gatsby": "^4.0.2",
