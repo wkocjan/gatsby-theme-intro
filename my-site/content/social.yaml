@@ -1,0 +1,36 @@
+- name: linkedin
+  url: https://linkedin.com/in/username
+
+- name: twitter
+  url: https://twitter.com/username
+
+- name: facebook
+  url:
+
+- name: instagram
+  url:
+
+- name: dribbble
+  url:
+
+- name: behance
+  url:
+
+- name: producthunt
+  url:
+
+- name: github
+  url: https://github.com/username
+
+- name: goodreads
+  url:
+
+- name: xing
+  url:
+
+- name: youtube
+  url:
+
+- name: medium
+  url:
+
