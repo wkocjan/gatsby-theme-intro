@@ -22,8 +22,8 @@ const MainContent = ({ formspreeEndpoint, history, projects, profile }) => {
       </div>
 
       {profile.about && <About about={profile.about} />}
-      <Projects projects={projects} />
       <WorkHistory history={history} />
+      <Projects projects={projects} />
       <ContactForm
         formspreeEndpoint={formspreeEndpoint}
         budget={profile.budget}

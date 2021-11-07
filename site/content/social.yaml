@@ -1,8 +1,8 @@
 - name: linkedin
-  url: https://linkedin.com/in/username
+  url: https://linkedin.com/in/rasmuseduards
 
 - name: twitter
-  url: https://twitter.com/username
+  url: 
 
 - name: facebook
   url:
@@ -20,7 +20,7 @@
   url:
 
 - name: github
-  url: https://github.com/username
+  url: https://github.com/reduards
 
 - name: goodreads
   url:
