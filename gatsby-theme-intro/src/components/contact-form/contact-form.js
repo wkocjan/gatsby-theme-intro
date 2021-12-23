@@ -1,11 +1,19 @@
 import React, { useRef, useState } from "react"
 import { ProfileType, string } from "../../types"
+import { useForm } from '@formspree/react';
 import "./contact-form.css"
 
 const ContactForm = ({ formspreeEndpoint, budget }) => {
+
+  const formSpringId = formspreeEndpoint.substring(formspreeEndpoint.lastIndexOf('/') + 1, formspreeEndpoint.length);
+
   const [isInquiry, setIsInquiry] = useState(false)
   const [selectedBudget, setSelectedBudget] = useState(budget.default)
   const inquiryDetails = useRef(null)
+
+  const [state, handleSubmit] = useForm(formSpringId);
+
+  const isInputAllowed = !(state.submitting || state.succeeded);
 
   return (
     <>
@@ -16,7 +24,7 @@ const ContactForm = ({ formspreeEndpoint, budget }) => {
         Contact
       </h5>
 
-      <form action={formspreeEndpoint} className="flex flex-wrap" method="post">
+      <form onSubmit={handleSubmit} className={!isInputAllowed ? "opacity-50" : ""}>
         <div className="flex flex-wrap w-full">
           <div className="w-full lg:w-1/3 py-px lg:px-px">
             <input
@@ -27,6 +35,7 @@ const ContactForm = ({ formspreeEndpoint, budget }) => {
               placeholder="NAME"
               required
               type="text"
+              disabled={!isInputAllowed}
             />
           </div>
           <div className="w-full lg:w-1/3 py-px lg:px-px">
@@ -38,6 +47,7 @@ const ContactForm = ({ formspreeEndpoint, budget }) => {
               placeholder="EMAIL ADDRESS"
               required
               type="email"
+              disabled={!isInputAllowed}
             />
           </div>
           <div className="w-full lg:w-1/3 py-px lg:px-px">
@@ -48,6 +58,7 @@ const ContactForm = ({ formspreeEndpoint, budget }) => {
                   name="inquiry"
                   onChange={() => setIsInquiry(!isInquiry)}
                   type="checkbox"
+                  disabled={!isInputAllowed}
                 />
                 <span className="relative inline-block border-2 align-middle mr-2 -mt-1 border-back w-5 h-5">
                   {isInquiry && (
@@ -87,6 +98,7 @@ const ContactForm = ({ formspreeEndpoint, budget }) => {
                   onChange={e => setSelectedBudget(e.currentTarget.value)}
                   step="1"
                   type="range"
+                  disabled={!isInputAllowed}
                 />
                 <div className="font-header font-semibold leading-none text-front opacity-50">
                   {budget.currency} {selectedBudget}K
@@ -102,6 +114,7 @@ const ContactForm = ({ formspreeEndpoint, budget }) => {
                 name="project_type"
                 placeholder="PROJECT TYPE (E.G. WEBSITE, MOBILE APP)"
                 type="text"
+                disabled={!isInputAllowed}
               />
             </div>
 
@@ -113,6 +126,7 @@ const ContactForm = ({ formspreeEndpoint, budget }) => {
                 name="phone"
                 placeholder="PHONE NUMBER"
                 type="tel"
+                disabled={!isInputAllowed}
               />
             </div>
           </div>
@@ -126,12 +140,14 @@ const ContactForm = ({ formspreeEndpoint, budget }) => {
             placeholder="MESSAGE"
             required
             rows="6"
+            disabled={!isInputAllowed}
           ></textarea>
           <div className="bg-back-light">
             <input
-              className="font-header inline-block font-semibold px-6 py-2 leading-tight cursor-pointer outline-none bg-front text-back-light uppercase mr-4 my-4 transition-opacity duration-150 hover:opacity-75"
+              className={`bg-lead font-header inline-block font-semibold px-6 py-2 leading-tight outline-none uppercase mr-4 my-4 transition-opacity duration-150 ${!isInputAllowed || "cursor-pointer hover:opacity-75" }`}
               type="submit"
-              value="Send"
+              value={state.submitting ? " Sending ..." : (state.succeeded ? "Successfully sent." : "Send")}
+              disabled={!isInputAllowed}
             />
           </div>
         </div>
