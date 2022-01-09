@@ -1,6 +1,6 @@
-[![Version](https://img.shields.io/npm/v/@wkocjan/gatsby-theme-intro)](https://www.npmjs.com/package/@wkocjan/gatsby-theme-intro)
-[![Downloads](https://img.shields.io/npm/dt/@wkocjan/gatsby-theme-intro)](https://www.npmjs.com/package/@wkocjan/gatsby-theme-intro)
-![License](https://img.shields.io/npm/l/@wkocjan/gatsby-theme-intro)
+[![Version](https://img.shields.io/npm/v/@lehnfeld/gatsby-theme-intro)](https://www.npmjs.com/package/@lehnfeld/gatsby-theme-intro)
+[![Downloads](https://img.shields.io/npm/dt/@lehnfeld/gatsby-theme-intro)](https://www.npmjs.com/package/@lehnfeld/gatsby-theme-intro)
+![License](https://img.shields.io/npm/l/@lehnfeld/gatsby-theme-intro)
 
 # Intro - Personal branding theme for developers
 
@@ -10,12 +10,12 @@ Tell your story by showing your skills, projects and career path.
 
 ## Preview
 
-[![Intro Theme](https://github.com/wkocjan/gatsby-theme-intro/blob/master/intro.png?raw=true)](https://www.youtube.com/watch?v=03rKddYHazo)
+[![Intro Theme](https://github.com/NiklasLehnfeld/gatsby-theme-intro/blob/master/intro.png?raw=true)](https://www.youtube.com/watch?v=03rKddYHazo)
 
 ### Live Demo
 
 Live demo is available at:
-https://weeby.studio/intro/preview
+https://lehnfeld.net
 
 ## Features
 
@@ -34,7 +34,7 @@ https://weeby.studio/intro/preview
 mkdir my-site
 cd my-site
 yarn init -y
-yarn add gatsby react react-dom @wkocjan/gatsby-theme-intro
+yarn add gatsby react react-dom @lehnfeld/gatsby-theme-intro
 ```
 
 ### Enable theme
@@ -45,7 +45,7 @@ Then add the theme to your `gatsby-config.js`.
 module.exports = {
   plugins: [
     {
-      resolve: "@wkocjan/gatsby-theme-intro",
+      resolve: "@lehnfeld/gatsby-theme-intro",
       options: {
         theme: "classic",
       },
@@ -125,7 +125,7 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: "@wkocjan/gatsby-theme-intro",
+      resolve: "@lehnfeld/gatsby-theme-intro",
       options: {
         basePath: "/",
         contentPath: "content/",
@@ -167,7 +167,7 @@ You can use Gatsby component shadowing technique to customize the theme.
 
 - All components are located in `src/components` directory.
 - All parameters accepted by components are defined using [PropTypes](https://reactjs.org/docs/typechecking-with-proptypes.html). You can find types definitions in one centeral `src/types` location.
-- Code you want to overwrite should be placed within `src/@wkocjan/gatsby-theme-intro/` directory.
+- Code you want to overwrite should be placed within `src/@lehnfeld/gatsby-theme-intro/` directory.
 
 Please refer to [the official documentation](https://www.gatsbyjs.org/docs/themes/shadowing/) to learn more.
 
@@ -182,7 +182,7 @@ module.exports = {
   (...)
   plugins: [
     {
-      resolve: "@wkocjan/gatsby-theme-intro",
+      resolve: "@lehnfeld/gatsby-theme-intro",
       options: {
         (...)
         theme: {
@@ -204,21 +204,9 @@ module.exports = {
 
 Please remember, that after modyfying `gatsby-config.js` file it may be required to restart `gatsby develop` process.
 
-## Changelog
-
-### 2.0.0
-
-The theme is now compatible with Gatsby v3 and TailwindCSS v2.
-
-### 1.1.0
-
-The version introduces required changes to make the contact form work after [latest changes](https://help.formspree.io/hc/en-us/articles/360056076314-Phasing-out-legacy-forms-email-URLs-) from Formspree.
-
-To upgrade, please add `formspreeEndpoint` property to `siteMetadata` object in your `gatsby-config.js`. For more information about configuring Formspree, please refer to the documentation above.
-
 ## About
 
-Intro. is a theme created by [Wojciech Kocjan](https://kocjan.net) from [Weeby Studio](https://weeby.studio).
+This is a theme created by [Wojciech Kocjan](https://kocjan.net) from [Weeby Studio](https://weeby.studio) and further developed by [Niklas Lehnfeld](https://lehnfeld.net)
 
 The theme has been initially [launched](https://www.producthunt.com/posts/intro-8) in 2018 as a commercial project written in JavaScript. In 2020 it's been rewritten to Gatsby and open sourced.
 
