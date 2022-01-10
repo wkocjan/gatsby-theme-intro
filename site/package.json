@@ -3,7 +3,7 @@
   "name": "site",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "Wojciech Kocjan <wojciech@kocjan.net>",
+  "author": "Niklas Lehnfeld <niklas@lehnfeld.net>",
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
@@ -11,7 +11,7 @@
     "develop": "gatsby develop"
   },
   "dependencies": {
-    "@wkocjan/gatsby-theme-intro": "*",
+    "@lehnfeld/gatsby-theme-intro": "*",
     "gatsby": "^3.0.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"

@@ -1,0 +1,10 @@
+version: 2
+updates:
+  - package-ecosystem: "npm" 
+    directory: "/gatsby-theme-intro/"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "npm" 
+    directory: "/site/"
+    schedule:
+      interval: "daily"
