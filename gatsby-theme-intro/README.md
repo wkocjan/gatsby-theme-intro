@@ -30,11 +30,19 @@ https://weeby.studio/intro/preview
 
 ### Install theme & dependencies
 
+__Yarn__
+
 ```shell
 mkdir my-site
 cd my-site
 yarn init -y
 yarn add gatsby react react-dom @wkocjan/gatsby-theme-intro
+```
+__NPM__
+```npm
+npm init gatsby
+cd my-gatsby-site          \\ replace my-gatsby-site with whatever you generated project folder is
+npm i @wkocjan/gatsby-theme-intro
 ```
 
 ### Enable theme
