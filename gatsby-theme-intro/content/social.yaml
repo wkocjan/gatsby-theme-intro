@@ -22,6 +22,9 @@
 - name: github
   url: https://github.com/username
 
+- name: gitlab
+  url:
+
 - name: goodreads
   url:
 

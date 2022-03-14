@@ -7,6 +7,7 @@ export const SocialType = {
     "dribbble",
     "facebook",
     "github",
+    "gitlab",
     "goodreads",
     "instagram",
     "linkedin",
