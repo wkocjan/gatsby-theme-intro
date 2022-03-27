@@ -21,7 +21,7 @@ module.exports = theme => {
         colors: {
           ...colors,
           "back-light": color(colors.back)
-            .lighten(0.18)
+            .lighten(0.40)
             .hex(),
         },
         borderRadius: {
