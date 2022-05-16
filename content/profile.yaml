@@ -1,28 +1,27 @@
 - profile:
-  initials: JD
-  name: John Doe
-  profession: Web Developer
+  initials: IR
+  name: Iftekhar Riyad
+  profession: Software Engineer
   image: images/profile.jpg
-  location: New York, USA
+  location: Sylhet, BD
   relocation: true
-  company: Atomic Studio
+  company: Energime University
   for_hire: true
-  focus: Learning Gatsby
-  focus_url: https://gatsbyjs.org
+  focus: Go
+  focus_url: https://go.dev/
   about: |
-    Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution.
+    As a Software Engineer, My expertise in JavaScript/React/Node with strong skills in Express, GraphQl, Material-UI, jQuery, Bootstrap, HTML5, Saas, and CSS3. I love working with Javascript, React.js and Node and have experience working with them. I don't confine myself with my knowledge in software development rather try to broaden my horizon by learning and building more.
 
-    User generated content in real-time will have multiple touchpoints for offshoring. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.
+    As a Freelancer, I provide Software Development solutions all over the world. From personal blogs to enterprise-level web applications with my expertise and experience I deliver optimized, scalable web applications on time. I also provide my services at Upwork and PeoplePerHour.
   skills:
-    - JavaScript
-    - HTML / CSS
-    - Ruby on Rails
-  tools:
     - React
+    - Node
+    - SQL
+  tools:
+    - Vim
     - VSCode
-    - Gatsby
   budget:
     currency: $
-    min: 5
+    min: 1
     max: 30
-    default: 10
+    default: 2

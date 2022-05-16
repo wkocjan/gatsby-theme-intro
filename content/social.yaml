@@ -1,8 +1,8 @@
 - name: linkedin
-  url: https://linkedin.com/in/username
+  url: https://www.linkedin.com/in/iftekharriyad/
 
 - name: twitter
-  url: https://twitter.com/username
+  url: https://twitter.com/riyad_iftekhar
 
 - name: facebook
   url:
@@ -20,7 +20,7 @@
   url:
 
 - name: github
-  url: https://github.com/username
+  url: https://github.com/iftekharriyad
 
 - name: goodreads
   url:
@@ -33,4 +33,3 @@
 
 - name: medium
   url:
-

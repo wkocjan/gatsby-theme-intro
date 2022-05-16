@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
-    description: "Personal page of John Doe",
+    description: "Portfolio of Iftekhar Riyad",
     locale: "en",
-    title: "John Doe",
+    title: "Iftekhar Riyad",
+    formspreeEndpoint: "https://formspree.io/f/mqknwggj",
   },
   plugins: [
     {
@@ -10,7 +11,7 @@ module.exports = {
       options: {
         basePath: "/",
         contentPath: "content/",
-        showThemeLogo: true,
+        showThemeLogo: false,
         theme: "classic",
       },
     },

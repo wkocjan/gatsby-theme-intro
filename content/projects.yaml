@@ -1,18 +1,29 @@
-- name: Example 1
-  url: https://github.com
-  description: Override the digital divide with additional clickthroughs from DevOps. User generated content in real-time will have multiple touchpoints for offshoring.
-  status: in progress
-  tags:
-    - JavaScript
-    - Gatsby
-  icon: github
-
-- name: Example 2
-  url: https://github.com
-  description: Leverage agile frameworks to provide a robust synopsis for high level overviews.
+- name: LineupApp - a waitlist Sass with walk-ins and appoinments.
+  url: https://app.lu-app.com/
+  description: Upgraded login and sign up functionality with multi-step form, smart auto-fill of optional fields in sign up. Expanded watilist from single line to multi line. Made UI/UX audit of the whole app and made many UI/UX improvements. Fixed some critical bugs in the app.
   status: live
   tags:
-    - JavaScript
-    - HTML
+    - React
+    - Material-UI
+    - Styled Components
+    - Node
+    - Socket.io
+    - mysql
+    - Redis
+    - Sequalize
+    - Twilio
+    - Docker
+    - Kubernetes
   icon: website
-  image: images/project.jpg
+  image: images/lineupapp.webp
+
+- name: Compresspedia - an online tool for bulk file compression
+  url: https://compresspedia.com
+  description: Compresspedia is a free online mass image, pdf, and video compressor. I have used React and Material-UI to build the UI and Node, Express, other system programs to build the compression api.
+  status: live
+  tags:
+    - React
+    - Material-UI
+    - Node
+    - Express
+  icon: website
