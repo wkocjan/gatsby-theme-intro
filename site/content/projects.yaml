@@ -11,7 +11,7 @@
   icon: drone
   image: images/drone.jpg
 
-  - name: Building a blog website
+- name: Building a blog website
   url: https://blog.rasmuseduards.io/
   description: In the making of starting a tech blog to talk about high and low level topics about the cloud.
   status: live
