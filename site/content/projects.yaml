@@ -8,16 +8,16 @@
     - shell
     - Azure
     - ODM
-  icon: drone
+  icon: github
   image: images/drone.jpg
 
 - name: Building a blog website
   url: https://blog.rasmuseduards.io/
   description: In the making of starting a tech blog to talk about high and low level topics about the cloud.
-  status: live
+  status: in progress
   tags:
     - Tech
     - Blog
     - Cloud
-  icon: project
+  icon: website
   image: images/project.jpg

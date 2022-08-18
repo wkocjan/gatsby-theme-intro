@@ -3,6 +3,7 @@ module.exports = {
     description: "Personal page of Rasmus Eduards",
     locale: "en",
     title: "Rasmus Eduards",
+    formspreeEndpoint: "https://formspree.io/f/mdojojez",
   },
   plugins: [
     {
