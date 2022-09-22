@@ -1,14 +1,14 @@
 - name: linkedin
-  url: https://linkedin.com/in/username
+  url: https://www.linkedin.com/in/sokol-mehmeti/
 
 - name: twitter
-  url: https://twitter.com/username
+  url: 
 
 - name: facebook
   url:
 
 - name: instagram
-  url:
+  url:  https://www.instagram.com/sokolmehmeti/
 
 - name: dribbble
   url:
@@ -20,7 +20,7 @@
   url:
 
 - name: github
-  url: https://github.com/username
+  url: 
 
 - name: goodreads
   url:

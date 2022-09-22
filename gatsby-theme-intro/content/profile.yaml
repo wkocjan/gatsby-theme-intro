@@ -1,11 +1,11 @@
 - profile:
-  initials: JD
-  name: John Doe
+  initials: SM
+  name: Sokol Mehmeti
   profession: Web Developer
   image: images/profile.jpg
-  location: New York, USA
+  location: Ulcinj, Montenegro
   relocation: true
-  company: Atomic Studio
+  company: Riiwards Inc.
   for_hire: true
   focus: Learning Gatsby
   focus_url: https://gatsbyjs.org
@@ -16,13 +16,13 @@
   skills:
     - JavaScript
     - HTML / CSS
-    - Ruby on Rails
+    - PHP
   tools:
     - React
     - VSCode
     - Gatsby
   budget:
     currency: $
-    min: 5
-    max: 30
-    default: 10
+    min: 15
+    max: 60
+    default: 30
