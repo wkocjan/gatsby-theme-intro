@@ -1,18 +1,18 @@
-- name: Example 1
-  url: https://github.com
-  description: Override the digital divide with additional clickthroughs from DevOps. User generated content in real-time will have multiple touchpoints for offshoring.
+- name: Optivance
+  url: https://www.optivance.me
+  description: Advanced Optimization (Online - Marketing, Development and Security)
   status: in progress
   tags:
-    - JavaScript
-    - Gatsby
-  icon: github
+    - Python
+    - PHP
+  icon: website
 
-- name: Example 2
-  url: https://github.com
-  description: Leverage agile frameworks to provide a robust synopsis for high level overviews.
+- name: Birthday Club
+  url: https://www.wix.com/app-market/birthday-club
+  description: Birthday & Loyalty Club supports businesses having small number of customers to those having tens of thousands of customers. Businesses include both online and brick & mortar businesses in food, retail, hospitality, sports, wellness, auto, beauty, entertainment, service sectors.
   status: live
   tags:
     - JavaScript
     - HTML
-  icon: website
+  icon: wix
   image: images/project.jpg
