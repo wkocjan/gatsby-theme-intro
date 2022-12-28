@@ -5,7 +5,6 @@ import "../styles/style.css"
 
 const NotFoundPage = () => (
   <>
-    <SEO title="404: Not found" />
     <div className="flex min-h-screen items-center justify-center text-gray-900">
       <div className="py-12">
         <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight">
@@ -19,5 +18,7 @@ const NotFoundPage = () => (
     </div>
   </>
 )
+
+export const head = () => <SEO title="404: Not found" />
 
 export default NotFoundPage

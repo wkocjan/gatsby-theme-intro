@@ -119,7 +119,6 @@ Here is the list of configuration options you can set in `gatsby-config.js`:
 module.exports = {
   siteMetadata: {
     description: "Personal page of John Doe",
-    locale: "en",
     title: "John Doe",
     formspreeEndpoint: "https://formspree.io/f/{your-id}",
   },
@@ -131,6 +130,7 @@ module.exports = {
         contentPath: "content/",
         showThemeLogo: true,
         theme: "classic",
+        lang: "en"
       },
     },
   ],

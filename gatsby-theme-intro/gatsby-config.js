@@ -3,11 +3,12 @@ module.exports = ({
   contentPath = "content/",
   showThemeLogo = true,
   theme = "classic",
+  lang = "en"
 }) => {
   return {
     siteMetadata: {
       description: "Personal page of John Doe",
-      locale: "en",
+      locale: lang,
       showThemeLogo,
       title: "John Doe",
       formspreeEndpoint: "https://formspree.io/f/{your-id}",
@@ -23,7 +24,6 @@ module.exports = ({
           ],
         },
       },
-      `gatsby-plugin-react-helmet`,
       `gatsby-transformer-yaml`,
       {
         resolve: `gatsby-source-filesystem`,
