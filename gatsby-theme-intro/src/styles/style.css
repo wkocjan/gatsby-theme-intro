@@ -3,3 +3,7 @@
 @tailwind components;
 
 @tailwind utilities;
+
+li.react-tabs__tab--selected {
+  @apply bg-back;
+}

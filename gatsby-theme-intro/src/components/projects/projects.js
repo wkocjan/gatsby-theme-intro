@@ -4,7 +4,7 @@ import { arrayOf, shape, ProjectType } from "../../types"
 
 const Projects = ({ projects }) => (
   <>
-    <h5 className="font-header font-semibold text-front text-sm uppercase mb-3">
+    <h5 className="font-header font-semibold text-front dark:text-front-dark text-sm uppercase mb-3">
       Projects
     </h5>
     {projects.map((project, i) => (

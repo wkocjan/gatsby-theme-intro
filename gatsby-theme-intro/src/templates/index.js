@@ -9,11 +9,11 @@ import Sidebar from "../components/sidebar/sidebar"
 import StructuredData from "../components/structured-data/structured-data"
 import "../styles/style.css"
 
-const IndexPage = ({ data }) => {
+const IndexPage = ({ data, pageContext }) => {
   const { history, profile, projects, site, social } = data
 
   return (
-    <div className="antialiased bg-back leading-normal font-text text-front">
+    <div className="antialiased bg-back dark:bg-back-dark leading-normal font-text text-front dark:text-front-dark">
       <Header initials={profile.initials} />
 
       <div className="md:max-w-screen-sm lg:max-w-screen-xl mx-auto px-4 flex flex-wrap pt-4 my-8">
@@ -29,14 +29,14 @@ const IndexPage = ({ data }) => {
 
       <Footer
         name={profile.name}
-        showThemeLogo={site.siteMetadata.showThemeLogo}
+        showThemeLogo={pageContext.showThemeLogo}
       />
     </div>
   )
 }
 
 export const Head = ({ data }) => {
-  const { history, profile, projects, site, social } = data
+  const { history, profile, projects, site, social, papers } = data
 
   return (
     <>
@@ -50,10 +50,9 @@ export const Head = ({ data }) => {
 export default IndexPage
 
 export const query = graphql`
-  query {
+  query IndexPageQuery {
     site {
       siteMetadata {
-        showThemeLogo
         formspreeEndpoint
       }
     }

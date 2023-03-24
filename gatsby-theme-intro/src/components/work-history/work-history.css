@@ -40,3 +40,12 @@
 .history-entry:first-child .dot {
   @apply bg-lead;
 }
+
+@media (prefers-color-scheme: dark) {
+  .history:before { @apply bg-line-dark; }
+  .history-entry:first-child .dot-bg { @apply bg-front-dark; }
+  .history-entry:first-child .dot { @apply bg-lead-dark; }
+}
+.dark .history:before { @apply bg-line-dark; }
+.dark .history-entry:first-child .dot-bg { @apply bg-front-dark; }
+.dark .history-entry:first-child .dot { @apply bg-lead-dark; }

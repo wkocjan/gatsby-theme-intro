@@ -4,5 +4,8 @@ module.exports = async ({ actions }, options) => {
   actions.createPage({
     path: basePath,
     component: require.resolve("../../templates/index.js"),
+    context: {
+      showThemeLogo: options.showThemeLogo
+    }
   })
 }

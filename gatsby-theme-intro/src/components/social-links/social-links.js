@@ -7,7 +7,7 @@ const SocialLinks = ({ social }) => {
     <div className="pl-3">
       {social.map(({ name, url }, i) => {
         const colorsClass =
-          i % 2 === 0 ? "bg-front text-back-light" : "bg-back-light text-front"
+          i % 2 === 0 ? "bg-front dark:bg-front-dark text-back-light dark:text-back-light-dark" : "bg-back-light dark:bg-back-light-dark text-front dark:text-front-dark"
         return (
           <a
             aria-label={name}

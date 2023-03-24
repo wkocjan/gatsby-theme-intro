@@ -7,6 +7,8 @@ exports.onRenderBody = ({ setHtmlAttributes, setBodyAttributes }, pluginOptions)
   //     only data we can get. Only one language option can be passed this way.
   //     One possibility for supporting multilingual sites would be include
   //     the language code in the path, and retrieve it with the `pathname` argument.
-  setBodyAttributes({ lang: `${pluginOptions.lang}`})
+  if (pluginOptions.lang != null) {  // Test should be False when lang is either null or undefined
+    setBodyAttributes({ lang: `${pluginOptions.lang}`})
+  }
 }
 

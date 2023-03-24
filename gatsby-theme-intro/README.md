@@ -130,7 +130,9 @@ module.exports = {
         contentPath: "content/",
         showThemeLogo: true,
         theme: "classic",
-        lang: "en"
+        darktheme: "dark-blue",
+        lang: null,
+        tailwindConfig: null
       },
     },
   ],
@@ -142,7 +144,10 @@ After modyfying `gatsby-config.js` it may be required to restart `gatsby develop
 - The `siteMetadata` section is responsible for SEO settings.
 - By modifying `basePath` parameter you can run the website on different URL (e.g. `https://mydomain.com/profile`). It may be useful when integrating with existing Gatsby site.
 - By setting `showThemeLogo` to `false` you can hide the Intro logo in the footer area.
+- If provided, the value of `lang` is added to the `<body>` element.
 - Change the `theme` parameter to load different color variant. Please refer to the list below for available values.
+- `darktheme` is an alternative theme, defined in the same way as `theme`. It is activited using Tailwind CSS's [dark mode machinery](https://tailwindcss.com/docs/dark-mode).
+- If provided, `tailwindConfig` should be an object. Any field it provides will completely overwrite the correspond field in `gatsy-theme-intro`'s default Tailwind configuration.
 
 ### Available color variants
 
@@ -159,6 +164,29 @@ After modyfying `gatsby-config.js` it may be required to restart `gatsby develop
 | `gh-inspired`       | [click here](https://weeby.studio/intro/themes/gh-inspired.jpg)   |
 | `warm-red`          | [click here](https://weeby.studio/intro/themes/warm-red.jpg)      |
 
+### Dark mode
+
+By default, TailwindCSS uses its `"media"` mode for activating dark mode, which on modern OSes should toggle dark mode automatically according to OS preference. To [toggle dark mode manually](https://tailwindcss.com/docs/dark-mode#toggling-dark-mode-manually), add the following to your configuration:
+
+```javascript
+  ...
+  plugins: [
+    {
+      resolve: "@wkocjan/gatsby-theme-intro",
+      options: {
+        ...
+        tailwindConfig: {
+          darkMode: "class",
+          content: ...
+          ...
+        }
+      }
+    }
+  ]
+```
+
+Then add the necessary UI to add/remove the `"dark"` class to the `<html>` element. Remember to update the `content` field so that the files used to define this UI are [scanned](https://tailwindcss.com/docs/content-configuration) by Tailwind CSS.
+
 ## Customization
 
 ### Component shadowing
@@ -168,8 +196,10 @@ You can use Gatsby component shadowing technique to customize the theme.
 - All components are located in `src/components` directory.
 - All parameters accepted by components are defined using [PropTypes](https://reactjs.org/docs/typechecking-with-proptypes.html). You can find types definitions in one centeral `src/types` location.
 - Code you want to overwrite should be placed within `src/@wkocjan/gatsby-theme-intro/` directory.
+- *Important* In order to use TailwindCSS classes in your new files, they must be be listed in the the `content` field of `tailwindConfig`, as in the [example above](#dark-mode).
 
 Please refer to [the official documentation](https://www.gatsbyjs.org/docs/themes/shadowing/) to learn more.
+
 
 ### Custom color variant
 
@@ -205,6 +235,10 @@ module.exports = {
 Please remember, that after modyfying `gatsby-config.js` file it may be required to restart `gatsby develop` process.
 
 ## Changelog
+
+### 3.0.0
+
+The theme is now compatible with Gatsby v3 and TailwindCSS v3.
 
 ### 2.0.0
 

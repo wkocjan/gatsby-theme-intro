@@ -4,12 +4,12 @@ import SkillSvg from "./skill.svg"
 
 const Skill = ({ skill, i }) => (
   <li
-    className={`relative flex justify-center items-center rounded-full border-2 border-skill-${i}`}
+    className={`relative flex justify-center items-center rounded-full border-2 border-skill-${i} dark:border-skill-${i}-dark`}
   >
-    <span className="absolute font-header font-semibold text-front text-sm md:text-base px-2 text-center">
+    <span className="absolute font-header font-semibold text-front dark:text-front-dark text-sm md:text-base px-2 text-center">
       {skill}
     </span>
-    <SkillSvg className={`w-full text-skill-${i} opacity-75 m-2`} />
+    <SkillSvg className={`w-full text-skill-${i} dark:text-skill-${i}-dark opacity-75 m-2`} />
   </li>
 )
 

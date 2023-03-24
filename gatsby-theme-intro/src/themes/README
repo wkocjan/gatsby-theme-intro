@@ -1,0 +1,16 @@
+List of color names themes must define:
+
+- back
+- front
+- lead
+- lead-text
+- line
+- skill-1
+- skill-2
+- skill-3
+
+In addition, the color
+
+- back-light
+
+is defined dynamically in `tailwind.config.js`, by lightening the color `back`.
