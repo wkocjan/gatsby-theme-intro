@@ -33,7 +33,7 @@ https://weeby.studio/intro/preview
 ```shell
 mkdir my-site
 cd my-site
-yarn init -y
+yarn init -2
 yarn add gatsby react react-dom @wkocjan/gatsby-theme-intro
 ```
 
@@ -234,11 +234,16 @@ module.exports = {
 
 Please remember, that after modyfying `gatsby-config.js` file it may be required to restart `gatsby develop` process.
 
+## Updating dependencies
+
+- Running `yarn upgrade-interactive` will check for any out-of-data packages, and propose to update them. It automatically updates the version ranges in `package.json` files.
+
+
 ## Changelog
 
 ### 3.0.0
 
-The theme is now compatible with Gatsby v3 and TailwindCSS v3.
+The theme is now compatible with Gatsby v3, TailwindCSS v3 and yarn v2+.
 
 ### 2.0.0
 
