@@ -2,12 +2,12 @@
   "name": "gatsby-theme-intro",
   "description": "Personal branding theme for developers",
   "version": "3.0.0a",
-  "main": "index.js",
+  "version": "3.0.0",
   "author": "Wojciech Kocjan <wojciech@kocjan.net>",
   "dependencies": {
+    "@babel/core": "^7.20.7",
     "autoprefixer": "^10.4.0",
     "color": "^4.2.3",
-    "gatsby": "^5.3.3",
     "gatsby-plugin-image": "^3.3.2",
     "gatsby-plugin-sharp": "^5.3.2",
     "gatsby-plugin-react-svg": "^3.3.0",
@@ -19,8 +19,6 @@
     "postcss": "^8.4.20",
     "prettier": "^2.8.1",
     "prop-types": "^15.8.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.0.1",
     "react-icons": "^4.7.1",
     "tailwindcss": "^3.2.4"
   },
