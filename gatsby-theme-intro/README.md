@@ -48,6 +48,7 @@ module.exports = {
       resolve: "@wkocjan/gatsby-theme-intro",
       options: {
         theme: "classic",
+        darktheme: "dark-blue",
       },
     },
   ],
