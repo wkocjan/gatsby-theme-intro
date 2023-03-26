@@ -1,7 +1,7 @@
 {
   "name": "@wkocjan/gatsby-theme-intro",
   "description": "Personal branding theme for developers",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "author": "Wojciech Kocjan <wojciech@kocjan.net>",
   "main": "index.js",
   "dependencies": {
