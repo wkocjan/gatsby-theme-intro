@@ -3,6 +3,8 @@ public
 node_modules
 !yarn.lock
 
+site/content
+
 # Non zero-install (https://next.yarnpkg.com/getting-started/qa/#which-files-should-be-gitignored)
 .pnp.*
 .yarn/*

@@ -13,8 +13,6 @@ module.exports = ({
     tailwindOptions = {...tailwindOptions, ...tailwindConfig}
   }
 
-  console.log(theme, darktheme)
-
   return {
     // siteMetadata should be overwritten by the website config
     siteMetadata: {

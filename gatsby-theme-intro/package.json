@@ -3,6 +3,7 @@
   "description": "Personal branding theme for developers",
   "version": "3.0.0",
   "author": "Wojciech Kocjan <wojciech@kocjan.net>",
+  "main": "index.js",
   "dependencies": {
     "@babel/core": "^7.21.3",
     "autoprefixer": "^10.4.14",
@@ -23,8 +24,8 @@
   },
   "peerDependencies": {
     "gatsby": "^5.3.3",
-    "react": "^18.2.0",
-    "react-dom": "^18.0.1"
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
   },
   "keywords": [
     "gatsby",
