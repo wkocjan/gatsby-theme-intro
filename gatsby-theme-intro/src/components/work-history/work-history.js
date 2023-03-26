@@ -5,7 +5,7 @@ import "./work-history.css"
 const WorkHistory = ({ history }) => {
   return (
     <>
-      <h5 className="font-header font-semibold text-front text-sm uppercase mt-12 mb-3 text-center">
+      <h5 className="font-header font-semibold text-front dark:text-front-dark text-sm uppercase mt-12 mb-3 text-center">
         Work history
       </h5>
       <div className="history flex flex-col relative pt-6 pb-6">
@@ -14,8 +14,8 @@ const WorkHistory = ({ history }) => {
             className="history-entry relative w-1/2 py-4"
             key={`${company}_${i}`}
           >
-            <span className="dot-bg w-14 h-14 absolute bg-line inline-flex rounded-full items-center justify-center">
-              <span className="dot w-5 h-5 bg-back-light rounded-full" />
+            <span className="dot-bg w-14 h-14 absolute bg-line dark:bg-line-dark inline-flex rounded-full items-center justify-center">
+              <span className="dot w-5 h-5 bg-back-light dark:bg-back-light-dark rounded-full" />
             </span>
             {url ? (
               <h4 className="subpixel-antialiased">

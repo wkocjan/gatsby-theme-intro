@@ -1,5 +1,7 @@
 module.exports = ({ actions }) => {
-  actions.createTypes(`
+  const { createTypes } = actions
+
+  const typeDefs = `
     type WorkHistoryYaml implements Node {
       id: ID!
       company: String!
@@ -18,5 +20,7 @@ module.exports = ({ actions }) => {
       tags: [String]
       url: String
     }
-  `)
+  `
+
+  createTypes(typeDefs)
 }

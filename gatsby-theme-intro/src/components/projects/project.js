@@ -8,7 +8,7 @@ import ProjectTags from "./project-tags"
 const Project = props => {
   const { name, image, url, description, status, tags, icon } = props
   return (
-    <div className="border-t-4 border-line relative flex flex-wrap bg-back-light p-4 lg:p-8 bg-no-repeat text-sm mb-6">
+    <div className="border-t-4 border-line dark:border-line-dark relative flex flex-wrap bg-back-light dark:bg-back-light-dark p-4 lg:p-8 bg-no-repeat text-sm mb-6">
       {image && (
         <div className="w-full pb-4 lg:w-2/5 lg:pr-8 lg:pb-0">
           <GatsbyImage image={image.childImageSharp.gatsbyImageData} alt={name} />
@@ -18,7 +18,7 @@ const Project = props => {
         <h4 className="font-bold">{name}</h4>
         {url && (
           <a
-            className="text-front underline break-all hover:opacity-75 transition-opacity duration-150"
+            className="text-front dark:text-front-dark underline break-all hover:opacity-75 transition-opacity duration-150"
             href={url}
             rel="noreferrer noopener"
             target="_blank"

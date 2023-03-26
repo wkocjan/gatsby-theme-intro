@@ -1,15 +1,18 @@
 {
-  "private": true,
-  "version": "2.0.1",
-  "main": "index.js",
+  "name": "gatsby-theme-intro-project",
+  "version": "3.0.1",
   "license": "MIT",
-  "scripts": {
-    "build": "yarn workspace site build",
-    "clean": "yarn workspace site clean",
-    "develop": "yarn workspace site develop"
+  "packageManager": "yarn@3.5.0",
+  "engines": {
+    "node": ">=18.0.0"
   },
   "workspaces": [
     "gatsby-theme-intro",
     "site"
-  ]
+  ],
+  "scripts": {
+    "build": "yarn workspace site build",
+    "develop": "yarn workspace site develop",
+    "clean": "yarn workspace site clean"
+  }
 }

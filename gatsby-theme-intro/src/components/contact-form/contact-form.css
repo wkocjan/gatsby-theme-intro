@@ -29,3 +29,14 @@
   -webkit-transform: translateY(-6.5px);
   -moz-transform: translateY(0);
 }
+
+@media (prefers-color-scheme: dark) {
+  .form-control { @apply text-front-dark; }
+  .form-input { @apply bg-back-light-dark; }
+  .input-range::range-track { @apply bg-back-dark; }
+  .input-range::range-thumb { @apply bg-lead-dark; }
+}
+.dark .form-control { @apply text-front-dark; }
+.dark .form-input { @apply bg-back-light-dark; }
+.dark .input-range::range-track { @apply bg-back-dark; }
+.dark .input-range::range-thumb { @apply bg-lead-dark; }

@@ -1,8 +1,6 @@
 {
-  "private": true,
   "name": "site",
   "version": "1.0.0",
-  "main": "index.js",
   "author": "Wojciech Kocjan <wojciech@kocjan.net>",
   "license": "MIT",
   "scripts": {
@@ -12,8 +10,8 @@
   },
   "dependencies": {
     "@wkocjan/gatsby-theme-intro": "*",
-    "gatsby": "^3.0.0",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "gatsby": "^5.8.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
   }
 }
