@@ -1,3 +1,9 @@
+import "./src/styles/global.css"
+
+export const onInitialClientRender = () => {
+  document.body.style.overflowX = "hidden"
+}
+
 module.exports = {
   siteMetadata: {
     description: "Personal page of Rasmus Eduards",
